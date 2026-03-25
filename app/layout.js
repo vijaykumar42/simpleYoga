@@ -1,10 +1,14 @@
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Aadhyantha Academy",
@@ -38,7 +42,7 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      <body className={inter.className}>
+      <body className={`${montserrat.className} antialiased`}>
         <Nav />
         {children}
         <Footer />
