@@ -29,7 +29,7 @@ export default function page() {
         <p className="text-gray-700 max-w-2xl mx-auto mb-12">
           We offer a curated selection of high-quality yoga and chess products
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
           {PRODUCTS.map((item, index) => (
             <div
               key={index}
